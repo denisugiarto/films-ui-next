@@ -1,6 +1,7 @@
-import { IncomingForm } from 'formidable';
 import cloudinary from 'cloudinary';
+import { IncomingForm } from 'formidable';
 import { getTokenFromServerCookie } from '../../library/auth';
+
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
@@ -31,6 +32,7 @@ export default async function upload(req, res) {
         public_id: user_id,
       });
       const { public_id } = response;
+      console.log("public_id: ", public_id);
       const jwt = getTokenFromServerCookie(req);
       const userResponse = await fetch(
         `${process.env.NEXT_PUBLIC_STRAPI_URL}/users/${user_id}`,

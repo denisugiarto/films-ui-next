@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { UserProvider } from "../library/authContext";
-import Nav from "./nav";
+import Nav from "./Nav";
 
 const Layout = ({ user, loading = false, children }) => (
   <UserProvider value={{ user, loading }}>

@@ -43,7 +43,7 @@ const Profile = ({ avatar }) => {
       <>
         <h1 className="text-5xl font-bold">
           Welcome back{" "}
-          <span className="bg-clip-text text-transparent bg-grandient-to-r from-blue-500 to-teal-400">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
             {user}
           </span>
           <span>👋</span>
@@ -64,7 +64,7 @@ const Profile = ({ avatar }) => {
         {/* eslint-disable @next/next/no-img-element */}
         {avatar && (
           <img
-            src={`https://res.cloudinary.com/tamas-demo/image/upload/f_auto,q_auto,w_150,h_150,g_face,c_thumb,r_max/${avatar}`}
+            src={`https://res.cloudinary.com/denzord/image/upload/f_auto,q_auto,w_150,h_150,g_face,c_thumb,r_max/${avatar}`}
             alt="Profile"
           />
         )}
