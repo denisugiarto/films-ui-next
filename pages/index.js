@@ -8,7 +8,7 @@ const Home = () => {
       user={user}
       title="Film Database"
       description="Film database with nextJS"
-      imageUrl="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.co.id%2FAttraction_Review-g499447-d152724-Reviews-Zona_Arqueologica_de_Coba-Coba_Yucatan_Peninsula.html&psig=AOvVaw0Sv1DSOk7xW5zXz04ya3xF&ust=1671250117413000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLD7l4Oi_fsCFQAAAAAdAAAAABAD"
+      imageUrl="https://images.unsplash.com/photo-1515634928627-2a4e0dae3ddf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
     >
       <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter mb-4">
         Strapi{" "}
